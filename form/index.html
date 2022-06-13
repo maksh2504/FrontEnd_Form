@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+<!--    <script type="text/javascript"></script>-->
+    <script src="js/app.js" type="module"></script>
+    <script src="js/formPrint.js" type="module"></script>
+    <script src="js/formInstance.js" type="module"></script>
+
+
+</head>
+<body>
+<div id="form">
+    <form id="form_id" method="post" onsubmit="Submit()">
+        <div class="section">
+            <label>First Name:</label>
+            <input type="text" placeholder="Your first name" id="firstName" required>
+        </div>
+        <div class="section">
+            <label>Last Name:</label>
+            <input type="text" placeholder="Your last name" id="lastName" required>
+        </div>
+        <div class="section">
+            <label>Password:</label>
+            <input type="password" placeholder="Password" id="password" required>
+        </div>
+        <div>
+            <label>Confirm:</label>
+            <input type="password" placeholder="Confirm" id="confirm" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" placeholder="user@gmail.com" id="email" required>
+        </div>
+        <div>
+            <label>Phone:</label>
+            <input type="text" placeholder="+375(00)000-00-00" id="phone" required>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <label id="successSubmit" style="color: green; display: none">Successfully sent!</label>
+            <label id="error" style="color: red; display: none">Error!!!</label>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
